@@ -7,9 +7,7 @@ if (document.getElementById("amigo").value=="") {
         return alert("Por favor, inserta un nombre");
     } else {
         let nuevoAmigo = document.getElementById("amigo").value;
-            console.log(nuevoAmigo);
             amigos.push(nuevoAmigo);
-            console.log(amigos);
             limpiarCaja();
         }
 mostrarAmigos();
@@ -54,3 +52,4 @@ function sortearAmigo() {
     // Mostrar el resultado
     document.getElementById("resultado").innerHTML = "Amigo secreto: " + amigoSorteado;
 }
+
